@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 270px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 200px;
+            background-color: rgb(25, 36, 77);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #homescore {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: red;
+            font-size: 73px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        .btn {
+            background-color: rgb(25, 36, 77);
+            color: white;
+            margin-top: 15px;
+        }
+
+        #guestscore {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: red;
+            font-size: 73px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .btnn{
+            position: relative;
+            left: 732px;
+            bottom: 50px;
+            padding: 10px;
+        }
+
+        .btnn:hover{
+            background-color: red;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class="container">
+            <div class="main1">
+                <h2>HOME</h2>
+                <div id="homescore"></div>
+                <button class="btn" onclick="one()">+1</button>
+                <button class="btn" onclick="two()">+2</button>
+                <button class="btn" onclick="three()">+3</button>
+            </div>
+
+            <div class="main2">
+                <h2>GUEST</h2>
+                <div id="guestscore"></div>
+                <button class="btn" onclick="four()">+1</button>
+                <button class="btn" onclick="five()">+2</button>
+                <button class="btn" onclick="six()">+3</button>
+            </div>
+        </div>
+        <button class="btnn" onclick="reset()">RESET</button>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
